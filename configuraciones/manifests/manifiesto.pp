@@ -5,6 +5,10 @@
 
 node ESPECIFICACION_DE_NODO {
     # Recursos que quiero para ese nodo o conjunto de nodos
+    # Esos recursos:
+        # Podrían usar datos, que yo cargaría en variables...
+        # Aquí definiré variables si las necesito
+    # Además, puede haber relaciones de dependencia entre los recursos
 }
 
 # ESPECIFICACION_DE_NODO

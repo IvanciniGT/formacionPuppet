@@ -68,7 +68,7 @@ En ansible los roles los encontramos en ansible-galaxy
 
 # Arquitectura
 
-            Servidor Puppet (puppetserver) (3)
+            Servidor Puppet (puppetserver) (3) < Manifiestos
                            |
        ---------------------->(4)-----------(2)
        |                                     ^

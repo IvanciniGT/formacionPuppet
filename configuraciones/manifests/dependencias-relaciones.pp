@@ -18,7 +18,7 @@ node default {
     }    
 
     service { 'nginx':
-        ensure   =>  running, 
+        ensure   =>  false, 
         enable   =>  true, 
         #require  =>  Package['nginx'], # Quiero que este servicio, se cargue despues del paquete
         #subscribe =>  Package['nginx'], # Quiero que este servicio, se cargue despues del paquete

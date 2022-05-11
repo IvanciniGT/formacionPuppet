@@ -1,3 +1,6 @@
+# Para generar este fichero usamos:
+# $ facter --yaml > ejemplo_salida_facts.yaml
+
 aio_agent_version: 6.27.1
 augeas:
   version: 1.12.0

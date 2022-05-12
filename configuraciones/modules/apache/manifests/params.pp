@@ -4,13 +4,13 @@ class apache::params {
 
         $paqueteapache = "httpd"   # Redhat y derivados
         $rutaficheroconfiguracion = '/etc/httpd/conf/httpd.conf'
-        $originalficheroconfiguracion = 'puppet:///modules/apache/files/httpd.conf'
+        $originalficheroconfiguracion = 'puppet:///modules/apache/httpd.conf'
                                          # En la carpeta raiz de puppet... donde sea que hayan instalado puppet
     } elsif $::osfamily == "Debian" {
 
         $paqueteapache = "apache2" # Ubuntu/Debian
         $rutaficheroconfiguracion = '/etc/apache2/apache2.conf'
-        $originalficheroconfiguracion = '/etc/puppetlabs/code/environments/production/modules/apache/files/httpd.conf'
+        $originalficheroconfiguracion = 'puppet:///modules/apache/apache2.conf'
 
     } else{
         # Si estamos con otro SO, no sigas, corta la ejecución... y dame un mensajito para que me entere

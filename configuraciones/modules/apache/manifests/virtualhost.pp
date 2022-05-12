@@ -13,7 +13,7 @@ class apache::virtualhost {
         file { 'fichero-configuracion-debian' :
             ensure   =>  file, 
             path     =>  "/etc/apache2/sites-available/$nombredelservidor.conf", # TODO:Convertir nombre de fichero a variable
-            content  =>  template('/etc/puppetlabs/code/environments/production/modules/apache/templates/debian.conf.erb'),
+            content  =>  template('apache/debian.conf.erb'),
         }
 
         file { 'enlace-configuracion-debian' :
@@ -22,7 +22,7 @@ class apache::virtualhost {
             target   =>  "/etc/apache2/sites-available/$nombredelservidor.conf",
         }
 
-        file { [ "/var/www/html/$nombredelservidor/web", "/var/www/html/$nombredelservidor/logs"] :
+        file { [ "/var/www","/var/www/html","/var/www/html/$nombredelservidor","/var/www/html/$nombredelservidor/web", "/var/www/html/$nombredelservidor/logs"] :
             ensure   =>  directory, 
         }
 

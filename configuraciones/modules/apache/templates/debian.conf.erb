@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    
+    ServerName <%= @nombredelservidor -%>
+    ServerAdmin <%= @correoadministradorsitio -%>
+    DocumentRoot /var/www/html/<%= @nombredelservidor -%>/web/
+    ErrorLog /var/www/html/<%= @nombredelservidor -%>/logs/error.log
+    CustomLog /var/www/html/<%= @nombredelservidor -%>/logs/access.log combined
+
+</VirtualHost>

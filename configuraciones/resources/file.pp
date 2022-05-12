@@ -5,6 +5,7 @@ file { '/etc/miapp/subfolder/suoders':
     ensure        => file  , # directory | symlink | absent | present
     user          => 'root',
     group         => 'root',
+    path          => 'path del fichero/directorio con el que estamos trabajando', # Si no se especifica se usa el id definido arriba
     mode          => '0750', # Permisos
         # Segundo numero son los permisos del propietario : USER
         # Tercer  numero son los permisos del grupo.      : GROUP

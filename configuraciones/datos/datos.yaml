@@ -1,0 +1,72 @@
+paquetes:
+    - git:
+    - nginx:
+        puerto: 80
+        abrir_en_firewall: true
+    - curl:
+    - mariadb:
+        puerto: 3306
+        abrir_en_firewall: false
+---
+18
+98
+19.8
+-18
+
+True
+False
+TRUE
+FALSE
+true
+false
+
+Esto es un txto
+"Esto es un txto"
+'Esto es un txto'
+
+---
+- item 1
+- 67
+- true
+-
+    - item 1
+    - 67
+    - true
+    -
+---
+ { "apache" => 80 , "nginx" => 443 }
+
+apache: 80
+nginx: 443
+---
+
+section:
+    item: thing
+    
+---
+ 'mysqld' => {
+    'replicate-do-db' => ['base1', 'base2'],
+  },
+  
+mysqld: 
+    replicate-do-db: 
+        - base1
+        - base2
+
+---
+mysql::server::override_options:
+    mysqld: 
+        replicate-do-db: 
+            - base1
+            - base2
+
+ 'mysqld' => {
+    'replicate-do-db' => ['base1', 'base2'],
+  },
+  
+---
+Con respecto a puppet:
+- Fuera comillas
+- Fuera llaves
+- La flecha cambiarla por :
+- Los corchetes fuera, y lo de dentro: cada cosa en una linea precedida por guiones... y quito las comas.

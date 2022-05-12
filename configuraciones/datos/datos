@@ -1,9 +1,0 @@
-paquetes 
-    git
-    nginx
-        puerto = 80
-        abrir_en_firewall = true
-    curl
-    mariadb
-        puerto = 3306
-        abrir_en_firewall = false

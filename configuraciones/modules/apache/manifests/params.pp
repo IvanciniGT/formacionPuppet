@@ -10,7 +10,7 @@ class apache::params {
 
         $paqueteapache = "apache2" # Ubuntu/Debian
         $rutaficheroconfiguracion = '/etc/apache2/apache2.conf'
-        $originalficheroconfiguracion = 'puppet:///modules/apache/files/httpd.conf'
+        $originalficheroconfiguracion = '/etc/puppetlabs/code/environments/production/modules/apache/files/httpd.conf'
 
     } else{
         # Si estamos con otro SO, no sigas, corta la ejecución... y dame un mensajito para que me entere
